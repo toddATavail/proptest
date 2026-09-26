@@ -1,5 +1,9 @@
 ## Unreleased
 
+### Bug Fixes
+
+- Fixed a forked or timed-out test not reporting a persisted failure seed that still fails: it aborted with a spurious "crashed or timed out before the first test" error or, when shrinking was cut short, forked child processes indefinitely.
+
 ## 1.11.0
 
 ### New Features
